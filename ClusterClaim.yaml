@@ -1,0 +1,11 @@
+---
+apiVersion: hive.openshift.io/v1
+kind: ClusterClaim
+metadata:
+  name: claim1
+  namespace: my-pools
+  labels:
+    usage: production
+    cluster.open-cluster-management.io/clusterset: team1
+spec:
+  clusterPoolName: aws-east  #
